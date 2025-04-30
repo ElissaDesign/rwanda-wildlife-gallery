@@ -4,8 +4,6 @@ import env from "./env"
 
 export default async function fetchImages(url: string): Promise<ImagesResults | undefined> {
     try {
-
-        console.log("Fetching images...", env.PEXELS_API_KEY)
         const res = await fetch(url, {
             headers: {
                 Authorization: env.PEXELS_API_KEY

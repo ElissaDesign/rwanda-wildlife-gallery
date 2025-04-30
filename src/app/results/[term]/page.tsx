@@ -1,4 +1,4 @@
-import Gallery from "@/components/Gallery"
+// import Gallery from "@/components/Gallery"
 
 type Props = {
     params: {
@@ -6,12 +6,12 @@ type Props = {
     }
 }
 
-export function generateMetadata({ params: { term } }: Props) {
+export function generateMetadata({ params: { term } }: any) {
     return {
         title: `Results for ${term}`
     }
 }
 
-export default function SearchResults({ params: { term } }: Props) {
-    return <Gallery topic={term} />
+export default async function SearchResults({ params: { term } }: any) {
+    return null
 }
