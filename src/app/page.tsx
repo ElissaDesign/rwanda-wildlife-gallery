@@ -1,3 +1,5 @@
+import Gallery from "@/components/Gallery";
+import HeroSection from "@/components/HeroSection";
 import BackgroundEffect from "@/components/ui/background-effect";
 import { H1, H2, H3 } from "@/components/ui/headings";
 import { ContainerWrapper, SectionWrapper } from "@/components/ui/wrappers";
@@ -7,10 +9,20 @@ export default function HomePage() {
     <>
       <section className="border-b">
         <ContainerWrapper className="wrapper relative">
+
+        
           <BackgroundEffect />
 
           <SectionWrapper className="space-y-2">
+
             <H1>Hello World!</H1>
+
+            <div className="">
+            <Gallery />
+
+            </div>
+
+
             <p className="text-muted-foreground">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.
               Possimus, incidunt quaerat suscipit ipsam repudiandae dolor.

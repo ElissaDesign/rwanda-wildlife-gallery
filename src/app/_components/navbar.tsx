@@ -8,7 +8,7 @@ import GitHub from "@/components/icons/github";
 
 export default function Navbar() {
   return (
-    <header className="h-16 border-b">
+    <header className="w-full h-16 border-b absolute">
       <ContainerWrapper>
         <div className="flex size-full items-center justify-between gap-4">
           <Link className="mr-auto font-semibold" href="/">
