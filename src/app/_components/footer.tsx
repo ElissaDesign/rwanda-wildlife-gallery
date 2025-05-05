@@ -12,7 +12,7 @@ export default function Footer() {
 
           <ExternalLink
             title="GitHub"
-            href="https://github.com/elissadesign/template"
+            href="https://github.com/elissadesign"
             showIcon
             className="text-sm text-muted-foreground"
           >

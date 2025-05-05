@@ -20,7 +20,7 @@ export default function Navbar() {
 
           <ExternalLink
             title="GitHub"
-            href="https://github.com/elissadesign/template"
+            href="https://github.com/elissadesign"
             showIcon
           >
             <GitHub className="size-5" />

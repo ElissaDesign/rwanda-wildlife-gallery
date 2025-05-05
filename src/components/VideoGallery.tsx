@@ -7,7 +7,7 @@ type Props = {
   topic?: string | undefined;
 };
 
-export default async function Gallery({ topic }: Props) {
+export default async function VideoGallery({ topic }: Props) {
   const url = !topic
     ? "https://api.pexels.com/v1/curated"
     : `https://api.pexels.com/v1/search?query=${topic}`;
@@ -15,7 +15,7 @@ export default async function Gallery({ topic }: Props) {
   const images: ImagesResults | undefined = await fetchImages(url);
 
   if (!images)
-    return <h2 className="m-4 text-2xl font-bold">No Images Found</h2>;
+    return <h2 className="m-4 text-2xl font-bold">No Videos Found</h2>;
 
   const photosWithBlur = await addBlurredDataUrls(images);
 
