@@ -1,5 +1,6 @@
 import Navbar from "@/app/_components/navbar";
 import Image from "next/image";
+import { H2 } from "./ui/headings";
 
 export default function HeroSection (){
     return <div className="min-w-full w-full h-72 relative">
@@ -15,6 +16,11 @@ export default function HeroSection (){
         />
 
 <Navbar />
+
+<div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center text-white">
+<H2>The best free stock photos, royalty free images & videos.</H2>
+</div>
+
 
     </div>
 }

@@ -39,8 +39,8 @@ export default function RootLayout({
       >
         <Providers>
           <div className="flex flex-1 flex-col">
-                  <HeroSection/>
-            
+            <HeroSection />
+
             <main className="isolate grid flex-1">{children}</main>
             <Footer />
           </div>
